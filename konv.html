@@ -10,7 +10,15 @@
 <body>
     <div class="konv">
         <div class="inp">
-            <input type="number" value="2" placeholder="usd" id="val" required />
+            <div class="inp-selec">
+                <input type="number" value="2" placeholder="usd" id="val" required  />
+                <select class="selector" name="" id="valuta">
+                    <option value="USD">USD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="EUR">EUR</option>
+                    <option value="PLN">PLN</option>
+                </select>
+            </div>
             <div class="butImg">
                 <button class="image" onclick="summ()">
                     <img class="img" src="img/50897.png" alt="">
@@ -20,9 +28,6 @@
             <p class="konvertation"><span id="konvertor"></span></p>
         </div>
     </div>
-    <select name="" id="">
-        <option value="USD">USD</option>
-    </select>
 </body>
 <script src="konv.js"></script>
 </html>
