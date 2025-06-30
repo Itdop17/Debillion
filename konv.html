@@ -10,15 +10,19 @@
 <body>
     <div class="konv">
         <div class="inp">
-            <input type="usd" placeholder="usd" id="val" required />
+            <input type="number" value="2" placeholder="usd" id="val" required />
             <div class="butImg">
-                <button class="image">
+                <button class="image" onclick="summ()">
                     <img class="img" src="img/50897.png" alt="">
                 </button>
             </div>
-                <input class="convert-result" type="uah" placeholder="uah" id="uah" required />
+                <input class="convert-result" type="number" placeholder="uah" id="uah" required />
             <p class="konvertation"><span id="konvertor"></span></p>
         </div>
-        </div>
+    </div>
+    <select name="" id="">
+        <option value="USD">USD</option>
+    </select>
 </body>
+<script src="konv.js"></script>
 </html>
