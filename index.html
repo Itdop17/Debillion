@@ -9,8 +9,36 @@
     <link rel="stylesheet" href="adaptive.css">
 </head>
 <body>
-    <div class="">
-        
-    </div>
+
+    <form action="#" method="post">
+      <div>
+        <label for="amount">Сума:</label>
+        <input type="number" name="amount" required>
+      </div>
+
+      <div>
+       <p>З валюти</p>
+        <select class="in">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="UAH">UAH</option>
+        </select>
+      </div>
+
+      <div>
+        <p>У валюту:</p>
+        <select class="out">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="UAH">UAH</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" value="Конвертувати">
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
