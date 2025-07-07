@@ -2,7 +2,7 @@ body {
     font-family: Arial;
       background-color: #f4f4f4;
       display: flex;
-      justify-content: center;
+      justify-content: right;
       align-items: center;
       height: 100vh;
       margin: 0;
@@ -12,7 +12,7 @@ body {
       margin-bottom: 5px;
       font-weight: bold;
     }
-    input[type="number"],
+    input[type="text"],
     select {
       width: 100%;
       padding: 8px;
@@ -34,8 +34,13 @@ body {
       background-color: #0056b3;
     }
     .in{
-
+width: 40%;
+padding: 10px;
     }
     .out{
-margin-bottom: 20px;
+width: 4%;
+padding: 10px;
+    }
+    select{
+      cursor: pointer;
     }
