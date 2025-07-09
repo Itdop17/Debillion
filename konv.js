@@ -1,3 +1,4 @@
+const select = document.querySelector(".selector")
 async function getData() {
   const url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json";
   try {
@@ -5,8 +6,15 @@ async function getData() {
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
-
     const json = await response.json();
+    let i;
+    json.forEach(element => {
+   const delaim = document.createElement("option")
+   delaim.value = element.rate
+   delaim.textContent = element.rate
+   select.appendChild(delaim)
+      console.log(element.rate)
+    });
     console.log(json);
   } catch (error) {
     console.error(error.message);
