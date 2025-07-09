@@ -1,0 +1,38 @@
+ footer{
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:end;
+  }
+
+  .footer{
+    flex: 1 1 200px;
+    margin: 10px;
+    width: 1000px;
+  }
+
+  .footer h4{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+  }
+
+  .footer ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer ul li{
+    margin-bottom: 10px;
+  }
+
+  .footer ul li a{
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .footer ul li a:hover{
+    color: #fff;
+  }

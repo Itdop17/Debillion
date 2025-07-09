@@ -2,10 +2,11 @@ body {
     font-family: Arial;
       background-color: #f4f4f4;
       display: flex;
-      justify-content: right;
+      justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      max-height: 2500px;
     }
     p {
       display: block;
@@ -14,14 +15,15 @@ body {
     }
     input[type="text"],
     select {
-      width: 100%;
+      width: 96%;
       padding: 8px;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 14px;
+      flex: 1;
     }
     input[type="submit"] {
-      width: 100%;
+      width: 360px;
       background-color: #007bff;
       color: white;
       padding: 10px;
@@ -33,14 +35,18 @@ body {
     input[type="submit"]:hover {
       background-color: #0056b3;
     }
-    .in{
-width: 40%;
-padding: 10px;
+    .in,.out{
+    gap: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 350px;
     }
-    .out{
-width: 4%;
-padding: 10px;
-    }
-    select{
-      cursor: pointer;
+    .valuta{
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
     }
