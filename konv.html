@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="konv.css">
-    <link rel="stylesheet" href="konv.js">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="konv.css" />
 </head>
 <body>
-    <div class="konv">
-        <div class="inp">
-            <div class="inp-selec">
-                <input type="number" value="2" placeholder="usd" id="val" required  />
-                <select class="selector" name="" id="valuta">
-                    <option value="USD">USD</option>
-                    <option value="UAH">UAH</option>
-                    <option value="EUR">EUR</option>
-                    <option value="PLN">PLN</option>
-                </select>
-            </div>
-            <div class="butImg">
-                <button class="image" onclick="summ()">
-                    <img class="img" src="img/50897.png" alt="">
-                </button>
-            </div>
-                <input class="convert-result" type="number" placeholder="uah" id="uah" required />
-            <p class="konvertation"><span id="konvertor"></span></p>
-        </div>
+  <div class="converter-wrapper">
+    <div class="converter-card">
+      <h2>💱 Конвертер валют</h2>
+
+      <div class="currency-group">
+  <input type="number" id="from-amount" value="1" min="0" />
+  <select id="from-currency" class="compact-select">
+    <option value="USD">🇺🇸 USD</option>
+    <option value="EUR">🇪🇺 EUR</option>
+    <option value="PLN">🇵🇱 PLN</option>
+    <option value="UAH">🇺🇦 UAH</option>
+  </select>
+</div>
+
+<button id="switch-btn" title="Поменять местами">⇅</button>
+
+<div class="currency-group">
+  <input type="number" id="to-amount" value="" readonly />
+  <select id="to-currency" class="compact-select">
+    <option value="UAH">🇺🇦 UAH</option>
+    <option value="USD">🇺🇸 USD</option>
+    <option value="EUR">🇪🇺 EUR</option>
+    <option value="PLN">🇵🇱 PLN</option>
+  </select>
+</div>
+
+
+      <p class="rate-info" id="rate-info">Загрузка курса...</p>
     </div>
+  </div>
+
+  <script src="konv.js"></script>
 </body>
-<script src="konv.js"></script>
 </html>
+    

@@ -1,41 +1,123 @@
-.konv{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    background-color: rgb(107, 144, 114);
-    border-radius: 10px;
-    width: 700px;
-    height: 200px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #d0e6ff, #e0ffe7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.img{
-    width: 30px;
-    height: 30px;
+
+.converter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.butImg{
-    display: flex;
-    margin: auto;
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+
+.converter-card {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
 }
-.usd{
-    height: 100px;
-    width: 100px;
+
+.converter-card h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #2c3e50;
 }
-input{
-    display: flex;
-    height: 20px;
-    width: 250px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 80px;
-    gap: 60px;
+
+.currency-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.inp{
-display: flex;
+
+
+#switch-btn {
+  align-self: center;
+  background-color: #3cb371;
+  color: #fff;
+  font-size: 24px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
-.selector{
-    
+
+#switch-btn:hover {
+  background-color: #2e8b57;
+}
+
+.rate-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  transition: 0.2s;
+}
+
+
+.currency-group {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  width: 100%;
+  transition: box-shadow 0.2s ease;
+}
+
+.currency-group:focus-within {
+  box-shadow: 0 0 8px rgba(60, 179, 113, 0.3);
+  border-color: #3cb371;
+}
+
+
+.currency-group input[type="number"] {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.currency-group select {
+  border: none;
+  background-color: white;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+}
+
+
+.currency-group select:hover {
+  background-color: #e7f7e7;
+}
+
+
+.currency-group select:focus {
+  outline: none;
+  box-shadow: none;
 }
